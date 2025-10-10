@@ -56,6 +56,16 @@ a:active  { text-decoration: underline; }
 .imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
 .imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
 
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgb(255, 255, 255);
+	z-index: 9999;
+}
+
 hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
 
 h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
@@ -98,6 +108,7 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
 	<TITLE>Local index - HTTrack</TITLE>
 </HEAD>
 <BODY>
+	<div id="overlay"></div>
 <H1 ALIGN=Center>Index of locally available sites:</H1>
 	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
 		<TR>
